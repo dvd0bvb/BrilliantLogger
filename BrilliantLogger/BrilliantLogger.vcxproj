@@ -148,11 +148,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BrilliantLogger.ixx" />
-    <ClCompile Include="Common.ixx" />
-    <ClCompile Include="LogLevel.ixx" />
-    <ClCompile Include="LogLine.ixx" />
-    <ClCompile Include="LogStream.ixx" />
+    <ClCompile Include="..\include\BrilliantLogger.ixx" />
+    <ClCompile Include="..\include\brilliant\Common.ixx" />
+    <ClCompile Include="..\include\brilliant\LogLevel.ixx" />
+    <ClCompile Include="..\include\brilliant\LogLine.ixx" />
+    <ClCompile Include="..\include\brilliant\LogStream.ixx" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
