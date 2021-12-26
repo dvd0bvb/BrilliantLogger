@@ -13,28 +13,25 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\brilliant">
-      <UniqueIdentifier>{6cbfd1a6-f93c-466d-89ae-7dc26c066c86}</UniqueIdentifier>
+    <Filter Include="Header Files\brilliant">
+      <UniqueIdentifier>{7224670d-3019-4c63-ae27-3774ddf4068f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="include\BrilliantLogger.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="include\brilliant\Common.ixx">
-      <Filter>Source Files\brilliant</Filter>
-    </ClCompile>
-    <ClCompile Include="include\brilliant\LogLevel.ixx">
-      <Filter>Source Files\brilliant</Filter>
-    </ClCompile>
-    <ClCompile Include="include\brilliant\LogLine.ixx">
-      <Filter>Source Files\brilliant</Filter>
-    </ClCompile>
-    <ClCompile Include="include\brilliant\LogStream.ixx">
-      <Filter>Source Files\brilliant</Filter>
-    </ClCompile>
+    <ClInclude Include="include\brilliant\LogLevel.h">
+      <Filter>Header Files\brilliant</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brilliant\LogLine.h">
+      <Filter>Header Files\brilliant</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BrilliantLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brilliant\Common.h">
+      <Filter>Header Files\brilliant</Filter>
+    </ClInclude>
+    <ClInclude Include="include\brilliant\LogStream.h">
+      <Filter>Header Files\brilliant</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

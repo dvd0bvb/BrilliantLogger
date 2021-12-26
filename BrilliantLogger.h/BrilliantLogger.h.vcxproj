@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{af236681-24fa-4cf5-99aa-8e680eeda771}</ProjectGuid>
-    <RootNamespace>BrilliantLogger</RootNamespace>
+    <ProjectGuid>{871f8007-d4ef-40eb-8066-f8ff418e92c0}</ProjectGuid>
+    <RootNamespace>BrilliantLoggerh</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -88,8 +88,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,8 +102,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,9 +117,6 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,8 +131,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalModuleDependencies>%(AdditionalModuleDependencies)</AdditionalModuleDependencies>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,12 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="include\BrilliantLogger.ixx" />
-    <ClCompile Include="include\brilliant\Common.ixx" />
-    <ClCompile Include="include\brilliant\LogLevel.ixx" />
-    <ClCompile Include="include\brilliant\LogLine.ixx" />
-    <ClCompile Include="include\brilliant\LogStream.ixx" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="include\BrilliantLogger.h" />
+    <ClInclude Include="include\brilliant\Common.h" />
+    <ClInclude Include="include\brilliant\LogLevel.h" />
+    <ClInclude Include="include\brilliant\LogLine.h" />
+    <ClInclude Include="include\brilliant\LogStream.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
