@@ -1,17 +1,17 @@
 #ifndef BRILLIANTLOGGER_LOGLEVEL_H
 #define BRILLIANTLOGGER_LOGLEVEL_H
 
-#include <ostream>;
+#include <ostream>
 
-export namespace Brilliant
+namespace Brilliant
 {
 	enum class LogLevel
 	{
-		None,
+		Error,
+		None,		
 		Lvl1,
 		Lvl2,
-		Lvl3,
-		Error
+		Lvl3
 	};
 
 	std::ostream& operator<< (std::ostream& os, const LogLevel level)

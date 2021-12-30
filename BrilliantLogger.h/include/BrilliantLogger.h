@@ -1,18 +1,14 @@
 #ifndef BRILLIANTLOGGER_H
 #define BRILLIANTLOGGER_H
 
-#include <optional>;
-#include <source_location>;
-#include <concepts>;
+#include <optional>
+#include <source_location>
+#include <concepts>
 
-#include "Common.h"
-//import LogLevel;
-//import LogLine;
-//import LogStream;
-//
-////unsure why I need compare outside of this module or even in this module
-//export import <compare>;
-//export import Common;
+#include "brilliant/Common.h"
+#include "brilliant/LogLevel.h"
+#include "brilliant/LogLine.h"
+#include "brilliant/LogStream.h"
 
 namespace Brilliant
 {

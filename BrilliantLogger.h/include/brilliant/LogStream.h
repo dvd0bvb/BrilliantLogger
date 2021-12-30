@@ -90,24 +90,24 @@ namespace Brilliant
 	class LogStream : public ILogStreamBase
 	{
 	public:
-		LogStream(std::string_view svOut) : stream(MakeStream(svOut))
+		explicit LogStream(std::string_view svOut) : stream(MakeStream(svOut))
 		{
 
 		}
 
-		LogStream(std::ostream& os) : stream(MakeStream(os))
+		explicit LogStream(std::ostream& os) : stream(MakeStream(os))
 		{
 
 		}
 
 		~LogStream() = default;
 
-		LogStream(LogStream&& other) : stream(std::move(other.stream))
+		LogStream(LogStream&& other) noexcept : stream(std::move(other.stream))
 		{
 
 		}
 
-		LogStream& operator= (LogStream&& other)
+		LogStream& operator= (LogStream&& other) noexcept
 		{
 			stream = std::move(other.stream);
 			return *this;

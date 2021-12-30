@@ -1,7 +1,7 @@
 #ifndef BRILLIANTLOGGER_COMMON_H
 #define BRILLIANTLOGGER_COMMON_H
 
-#include <string_view>;
+#include <string_view>
 
 namespace Brilliant
 {
